@@ -1,0 +1,32 @@
+body{
+  box-sizing: border-box;
+  
+}
+
+.card1,
+.card2,
+.card3{
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.card1{
+  background: rgb(255,203,106);
+background: linear-gradient(90deg, rgba(255,203,106,1) 0%, rgba(254,171,255,1) 99%);
+  
+}
+
+.card2{
+  background: rgb(87,217,238);
+background: linear-gradient(90deg, rgba(87,217,238,1) 0%, rgba(97,147,222,1) 99%);
+  
+}
+
+.card3{
+  background: rgb(142,246,229);
+background: linear-gradient(90deg, rgba(142,246,229,1) 0%, rgba(20,166,167,1) 99%);
+}
