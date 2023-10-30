@@ -3,10 +3,19 @@ body{
   font-family: "Montserrat", sans-serif;
   
 }
+.icon{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  transition: 300ms;
+  transition-duration: 300ms;
 
-.card1,
-.card2,
-.card3 {
+}
+
+.card {
   width: 500px;
   height: 300px;
   display: inline-block;
@@ -18,10 +27,18 @@ body{
   
 }
 
-.card1{
-  background: rgb(255,203,106);
+.card:nth-child(3n+1){
 background: linear-gradient(90deg, rgba(255,203,106,1) 0%, rgba(254,171,255,1) 99%);
 }
+
+.card:nth-child(3n+2){
+background: linear-gradient(90deg, rgba(87,217,238,1) 0%, rgba(97,147,222,1) 99%);
+}
+
+.card:nth-child(3n){
+background: linear-gradient(90deg, rgba(142,246,229,1) 0%, rgba(20,166,167,1) 99%);
+}
+
 .wrapper{
   position: absolute;
   top: 50px;
@@ -37,7 +54,6 @@ background: linear-gradient(90deg, rgba(255,203,106,1) 0%, rgba(254,171,255,1) 9
   font-size: 40px;
   font-weight: 600;
   padding-bottom: 60px;
-
 }
 
 .percent{
@@ -46,39 +62,42 @@ background: linear-gradient(90deg, rgba(255,203,106,1) 0%, rgba(254,171,255,1) 9
 }
 
 
-.card-circle::after{
-  right: -15%;
+.card::after{
+  right: -100px;
   top: -10%;
   width: 250px;
   height: 250px;
 }
 
-.card-circle:before {
+.card:before {
   right: -5%;
   top: 50%;
   width: 275px;
   height: 275px;
 }
 
-.card-circle::after,
-.card-circle::before{
+.card::after,
+.card::before{
   content: "";
   position: absolute;
   background-color: white;
   opacity: 0.2;
   border-radius: 50%;
+  transition: transform 300ms;
+  transition-duration: 300ms;
 }
 
-
-.card2{
-  background: rgb(87,217,238);
-background: linear-gradient(90deg, rgba(87,217,238,1) 0%, rgba(97,147,222,1) 99%);
+.card:hover::after{
+  transform: translate(-500px,115px);
 }
 
-.card3{
-  background: rgb(142,246,229);
-background: linear-gradient(90deg, rgba(142,246,229,1) 0%, rgba(20,166,167,1) 99%);
+.card:hover::before{
+  transform: translate(-355px,-245px);
+  transition-delay: 300ms;
 }
 
-
+.card:hover .icon{
+  transform: scale(-2,2);
+  fill: crimson;
+}
 
