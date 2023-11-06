@@ -1,0 +1,58 @@
+body{
+  box-sizing: border-box;
+}
+
+.form-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 245);
+  padding: 40px;
+}
+
+.form-title{
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-description{
+  padding-bottom: 30px;
+}
+
+.user-data{
+  display: flex;
+  justify-content: space-between;
+}
+.user-data .input{
+  width: 155px;
+}
+.enter-data{
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.btn{
+  background-color: rgb(77, 167, 81);
+  color: aliceblue;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}

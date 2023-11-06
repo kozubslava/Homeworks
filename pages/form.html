@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registeration</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+  <section class="form-section">
+    <div class="form-wrapper">
+      <h1 class="form-title">Register</h1>
+      <p class="form-description">Create your accaunt. It's free and only takes a minute</p>
+      <form class="form">
+        <fieldset class="user-data">
+          <input class="input" name="firstname" placeholder="First Name" required />
+          <input class="input" name="lastname" placeholder="Last Name" required />
+        </fieldset>
+        <fieldset class="enter-data">
+          <input class="input" name="email" placeholder="Email" type="email"
+            pattern="[a-zA-Z0-9]{2,32}@[a-zA-Z]{1,64}\.[a-zA-Z]{1,64}" />
+          <input class="input" name="password" placeholder="Password" type="password" />
+          <input class="input" name="confirmpassword" placeholder="Confirm Password" type="password" />
+        </fieldset>
+        <fieldset class="privacy-policy">
+          <label>
+            <input class="input" type="checkbox" name="is-subscribed" checked value="true" required />I assept the <a
+              href="#">Terms
+              of
+              Use</a> &amp; <a href="#">Privacy Policy</a></label>
+        </fieldset>
+        <button type="submit" class="btn">Register Now</button>
+      </form>
+    </div>
+
+
+  </section>
+</body>
+
+</html>
