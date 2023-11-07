@@ -18,13 +18,35 @@ body{
 }
 
 .form-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 32px;
   text-align: center;
   padding-bottom: 20px;
 }
 
+.form-title::before, 
+.form-title::after{
+  content: "";
+  background-color: rgb(219 207 207);
+  height: 2px;
+  display: inline-block;
+  width:100%;
+}
+
+.form-title::after{
+  margin-left: 20px;
+  }
+  
+.form-title::before{
+    margin-right: 20px;
+  }
+
+
 .form-description{
   padding-bottom: 30px;
+  color: gray;
 }
 
 .user-data{
@@ -39,18 +61,31 @@ body{
   flex-direction: column;
 }
 
+.privacy-policy{
+  color: gray;
+}
+
 .input {
   margin-bottom: 25px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid gray;
+  border: 1px solid rgb(219 207 207);
+}
+
+[type="checkbox"]{
+  margin-right: 10px;
+}
+
+a{
+  color: rgb(77, 167, 81);
+  text-decoration: none;
 }
 
 .btn{
   background-color: rgb(77, 167, 81);
   color: aliceblue;
   font-size: 15px;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   border: none;
   font-weight: 600;
